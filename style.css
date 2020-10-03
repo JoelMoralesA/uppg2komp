@@ -121,6 +121,37 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    
-    
+ 
+    #container {
+        display: grid;
+        width: 110%;
+        height: 800px;
+        margin: 20px 0px;
+        gap: 10px 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 200px);
+        grid-template-areas: 
+        'header'
+        'B1'
+        'B2'
+        'B3'
+        'content'
+        'sidebar'
+        'footer'
+        'footer'
+        'footer'
+        'footer';
+    }
+    footer {
+        display: grid;
+        grid-area: footer;
+        gap: 10px 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas: 
+        'fs1'
+        'fs2'
+        'fs3'
+        'fs4';
+    }
 }
